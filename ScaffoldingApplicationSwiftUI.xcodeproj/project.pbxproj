@@ -13,6 +13,9 @@
 		DE94D17D26218BA000E83FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE94D17C26218BA000E83FED /* Assets.xcassets */; };
 		DE94D18026218BA000E83FED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE94D17F26218BA000E83FED /* Preview Assets.xcassets */; };
 		DE94D18326218BA000E83FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE94D18126218BA000E83FED /* LaunchScreen.storyboard */; };
+		DE94D18E26218DC700E83FED /* TravelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94D18D26218DC700E83FED /* TravelScreen.swift */; };
+		DE94D1972626E27600E83FED /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94D1962626E27600E83FED /* DashboardScreen.swift */; };
+		DE94D19B2626EACA00E83FED /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94D19A2626EACA00E83FED /* AboutScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DE94D17F26218BA000E83FED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE94D18226218BA000E83FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE94D18426218BA000E83FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE94D18D26218DC700E83FED /* TravelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelScreen.swift; sourceTree = "<group>"; };
+		DE94D1962626E27600E83FED /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
+		DE94D19A2626EACA00E83FED /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				DE94D17626218B9F00E83FED /* AppDelegate.swift */,
 				DE94D17826218B9F00E83FED /* SceneDelegate.swift */,
 				DE94D17A26218B9F00E83FED /* ContentView.swift */,
+				DE94D1962626E27600E83FED /* DashboardScreen.swift */,
+				DE94D18D26218DC700E83FED /* TravelScreen.swift */,
+				DE94D19A2626EACA00E83FED /* AboutScreen.swift */,
 				DE94D17C26218BA000E83FED /* Assets.xcassets */,
 				DE94D18126218BA000E83FED /* LaunchScreen.storyboard */,
 				DE94D18426218BA000E83FED /* Info.plist */,
@@ -85,6 +94,7 @@
 				DE94D16F26218B9F00E83FED /* Sources */,
 				DE94D17026218B9F00E83FED /* Frameworks */,
 				DE94D17126218B9F00E83FED /* Resources */,
+				DE94D19D2626F01700E83FED /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -140,6 +150,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DE94D19D2626F01700E83FED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE94D16F26218B9F00E83FED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,6 +178,9 @@
 				DE94D17726218B9F00E83FED /* AppDelegate.swift in Sources */,
 				DE94D17926218B9F00E83FED /* SceneDelegate.swift in Sources */,
 				DE94D17B26218B9F00E83FED /* ContentView.swift in Sources */,
+				DE94D18E26218DC700E83FED /* TravelScreen.swift in Sources */,
+				DE94D1972626E27600E83FED /* DashboardScreen.swift in Sources */,
+				DE94D19B2626EACA00E83FED /* AboutScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
